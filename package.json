@@ -1,0 +1,18 @@
+{
+  "name": "winds-and-echoes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Winds & Echoes — adventure travel blog mono-repo",
+  "workspaces": [
+    "pipeline",
+    "pwa"
+  ],
+  "scripts": {
+    "pipeline": "npm run dev --workspace=pipeline",
+    "pwa": "npm run dev --workspace=pwa",
+    "dev": "concurrently \"npm run pipeline\" \"npm run pwa\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

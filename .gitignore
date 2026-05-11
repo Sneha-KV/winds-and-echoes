@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+.next/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Pipeline — photo inbox/outbox (local only, never commit photos)
+pipeline/inbox/
+pipeline/outbox/
+pipeline/drafts/
+
+# Prompts — editorial IP, keep private
+prompts/
+
+# Ghost content DB (lives on server only)
+*.db
+content/
